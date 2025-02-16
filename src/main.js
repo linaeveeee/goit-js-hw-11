@@ -34,6 +34,8 @@ function handleFormSubmit(e) {
 
   showLoader();
 
+  refs.gallery.innerHTML = '';
+
   fetchImages(searchText)
     .then(images => {
       hideLoader();
